@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Hardware | PC Pepo</title>
+    <meta name="description" content="Portafolio técnico de hardware, presupuesto y mantenimiento de PC. Proyecto de 5to año.">
+    <meta name="keywords" content="hardware, armado de pc, intel, asus, mantenimiento, arduino, informática">
+    <meta name="author" content="Pedro Del Boca Casis">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+    <div id="cursor-follower"></div>
+    <button id="btn-tema" class="interruptor-tema" title="Cambiar tema">☽</button>
+
+    <nav>
+        <button id="btn-menu-movil" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-lista">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#componentes">Hardware</a></li>
+            <li><a href="#perifericos">Periféricos</a></li>
+            <li><a href="#presupuestos">Presupuestos</a></li>
+            <li><a href="#mantenimiento">Mantenimiento</a></li>
+            <li><a href="#arduino">Arduino e IoT</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio">
+        <div class="hero-titulo">
+            <h1>Bitácora<br>de <em>Hardware</em></h1>
+        </div>
+        <div class="hero-meta">
+            <p class="nombre">Pedro Del Boca Casis</p>
+            <p class="subtitulo">Proyecto de Laboratorio</p>
+            <p class="stack">HTML · CSS · JS</p>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- COMPONENTES -->
+        <section id="componentes" class="reveal">
+            <h2>Diagnóstico de <em>Componentes</em></h2>
+            <p class="section-desc">Inventario técnico completo de los componentes del equipo personal.</p>
+            <button id="btn-ficha" class="boton-accion">Ver Ficha Técnica PC LAB</button>
+            
+
+            <div class="galeria-grid">
+                <div class="tarjeta">
+                    <img src="images/placa_madree.png" alt="Placa Madre">
+                    <h3>Placa Madre Asus</h3>
+                    <p>Modelo: Asus Rog Maximus Z790 Hero</p>
+                    <button id="btn-diagnostico" class="boton-accion">Ver Layout del Manual</button>
+                    <button id="btn-investigacion" class="boton-accion">Investigación Arquitectónica</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="images/procesador.png" alt="Procesador Intel Core i9">
+                    <h3>Microprocesador Intel Core</h3>
+                    <p>Modelo: Intel Core i9-14900k @ 6.00GHz</p>
+                    <p>Arquitectura: 64 bits, x86</p>
+                    <button id="btn-investigacion2" class="boton-accion">Investigación Arquitectónica</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="images/ram.png" alt="Memoria RAM">
+                    <h3>Memoria RAM Adata</h3>
+                    <p>Modelo: Adata XPG Lancer Blade DDR5</p>
+                    <p>Capacidad: 16.0 GB instalada (15.8 GB utilizable)</p>
+                    <button id="btn-investigacion3" class="boton-accion">Investigación Arquitectónica</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="images/placa_de_video.png" alt="Tarjeta Gráfica">
+                    <h3>Tarjeta Gráfica (GPU) Gigabyte</h3>
+                    <p>Modelo: RTX 5090, 32 GB</p>
+                    <button id="btn-investigacion4" class="boton-accion">Investigación Arquitectónica</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="images/fuente.png" alt="Fuente de Alimentación">
+                    <h3>Fuente de Alimentación Gigabyte</h3>
+                    <p>Potencia: 750W 80 Plus Bronze</p>
+                    <button id="btn-investigacion5" class="boton-accion">Investigación Arquitectónica</button>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="images/ssd.png" alt="SSD">
+                    <h3>Almacenamiento SSD WD Green</h3>
+                    <p>Tipo: SATA III 6 Gb/s</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="images/refrigeracion_liquida.png" alt="Refrigeración Líquida">
+                    <h3>Refrigeración Líquida Arctic</h3>
+                    <p>Liquid Freezer III Pro 280, Radiador 38mm, ventiladores P14 Pro.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="images/gabinete.png" alt="Gabinete">
+                    <h3>Gabinete Corsair 2500 Series</h3>
+                    <p>Formato: Mid Tower ATX, doble cámara de vidrio templado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERIFÉRICOS -->
+        <section id="perifericos">
+            <h2>Periféricos y <em>Dispositivos E/S</em></h2>
+            <p class="section-desc">Interfaces físicas de comunicación con el usuario.</p>
+            <button id="btn-investigacion6" class="boton-accion">Investigación Arquitectónica</button>
+
+            <div class="galeria-grid">
+                <div class="tarjeta">
+                    <img src="images/monitor.png" alt="Monitor">
+                    <h3>Monitor Asus TUF Gaming 34"</h3>
+                    <p>Resolución: 3440×1440 (Ultra Wide) a 250Hz</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="images/teclado_mouse.png" alt="Teclado y Mouse">
+                    <h3>Teclado y Mouse Redragon</h3>
+                    <p>Switch Low Profile Brown · USB / Inalámbrico 2.4GHz</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="images/auriculares.png" alt="Auriculares">
+                    <h3>Auriculares Redragon Pandora 7.1</h3>
+                    <p>Conectividad: Receptor USB-A / Bluetooth</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRESUPUESTOS -->
+        <section id="presupuestos">
+            <h2>Armado de <em>Equipos</em></h2>
+            <p class="section-desc">Documentación técnica de presupuestos redactada bajo normas APA.</p>
+
+            <div class="galeria-grid">
+                <div class="tarjeta">
+                    <h3>PC Oficina — Presupuesto Limitado</h3>
+                    <p>Enfoque en ofimática, durabilidad y mejor relación costo-beneficio.</p>
+                    <button id="btn-presupuesto_c1" class="boton-accion">Ver Presupuesto</button>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>PC Gaming — Presupuesto Libre</h3>
+                    <p>Enfoque en máximo rendimiento gráfico y sistemas de refrigeración avanzados.</p>
+                    <button id="btn-presupuesto_c2" class="boton-accion">Ver Presupuesto</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MANTENIMIENTO -->
+        <section id="mantenimiento">
+            <h2>Laboratorio: <em>Diagnóstico y Mantenimiento</em></h2>
+            <p class="section-desc">Documentación técnica de los procedimientos realizados en el entorno de pruebas.</p>
+
+            <div class="galeria-grid">
+                <div class="tarjeta">
+                    <h3>Ficha Práctica de Hardware</h3>
+                    <p>Reconocimiento visual e inspección de componentes internos en equipos de descarte.</p>
+                    <a href="LINK_A_LA_FICHA_PRACTICA" target="_blank" class="boton-accion">Ver Ficha Completada</a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Manual del Técnico</h3>
+                    <p>Protocolos de diagnóstico, desarme, uso del multímetro y recuperación de datos.</p>
+                    <a href="LINK_AL_MANUAL_UNIFICADO" target="_blank" class="boton-accion">Leer Manual de Protocolos</a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Soldadura y Recuperación</h3>
+                    <p>Prácticas de desoldadura de componentes y reparación de pistas en placas base averiadas.</p>
+                    <button id="btn-soldadura" class="boton-accion">Ver Informe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARDUINO -->
+        <section id="arduino">
+            <h2>Proyectos <em>Arduino e IoT</em></h2>
+            <p class="section-desc">Aplicación práctica de programación en C++ y electrónica para resolver problemas del mundo real. Todos las emulaciones de los proyectos se han realizado con Arduino UNO y el simulador Wokwie</p>
+
+            <div class="galeria-grid">
+                <div class="tarjeta">
+                    <h3>Encender Led con Botón</h3>
+                    <div style="position: relative; display: inline-block; vertical-align: middle;"><img src="images/boton-led.jpeg" alt="Encender Led" style="display: block; max-width: 100%;"><button onclick="this.nextElementSibling.showModal()" style="position: absolute; bottom: 8px; right: 8px; background: rgba(11, 39, 9, 0.6); border: none; cursor: pointer; padding: 6px; border-radius: 4px; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(2px);" title="Ampliar imagen"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button><dialog style="border: none; border-radius: 12px; padding: 0; margin: 0; background: transparent; width: 90vw; max-width: 1100px; height: 80vh; max-height: 700px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); overflow: visible; box-shadow: none;" class="modal-zoom"><div style="position: relative; width: 100%; height: 100%;"><img src="images/intensidad-led.jpeg" style="width: 100%; height: 100%; object-fit: contain; display: block; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.7); background-color: #1a1a1a;"><button onclick="this.closest('dialog').close()" style="position: absolute; top: -12px; right: -12px; background: #ff4d4d; color: white; border: none; border-radius: 50%; width: 32px; height: 32px; font-weight: bold; font-size: 14px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; z-index: 10;">X</button></div></dialog></div>
+                    <p>Características: Se realiza este trabajo con el fin de entender la lógica de cómo interpreta la placa las señales High (1) y Low (0) al programar con un botón.</p>
+                    <a href="https://wokwi.com/projects/470902192870506497" target="_blank" class="boton-accion">Ver Código y Circuito</a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Regular intensidad del Led con un Potenciómetro</h3>
+                    <div style="position: relative; display: inline-block; vertical-align: middle;"><img src="images/intensidad-led.jpeg" alt="Regular intensidad" style="display: block; max-width: 100%;"><button onclick="this.nextElementSibling.showModal()" style="position: absolute; bottom: 8px; right: 8px; background: rgba(11, 39, 9, 0.6); border: none; cursor: pointer; padding: 6px; border-radius: 4px; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(2px);" title="Ampliar imagen"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button><dialog style="border: none; border-radius: 12px; padding: 0; margin: 0; background: transparent; width: 90vw; max-width: 1100px; height: 80vh; max-height: 700px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); overflow: visible; box-shadow: none;" class="modal-zoom"><div style="position: relative; width: 100%; height: 100%;"><img src="images/intensidad-led.jpeg" style="width: 100%; height: 100%; object-fit: contain; display: block; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.7); background-color: #1a1a1a;"><button onclick="this.closest('dialog').close()" style="position: absolute; top: -12px; right: -12px; background: #ff4d4d; color: white; border: none; border-radius: 50% !important; width: 32px !important; height: 32px !important; min-width: 32px !important; min-height: 32px !important; font-weight: bold; font-size: 14px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.4); display: flex !important; align-items: center !important; justify-content: center !important; padding: 0 !important; margin: 0 !important; line-height: 1 !important; z-index: 10;">X</button></div></dialog></div>
+                     <p>Características: Se realiza este trabajo con el fin de entender la lógica de cómo interpreta un potenciómetro al regular la intensidad de un led.</p>
+                    <a href="https://wokwi.com/projects/470905884913429505" target="_blank" class="boton-accion">Ver Código y Circuito</a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Lógica del Servomotor</h3>
+                    <div style="position: relative; display: inline-block; vertical-align: middle;"><img src="images/servomotor.jpeg" alt="Servomotor" style="display: block; max-width: 100%;"><button onclick="this.nextElementSibling.showModal()" style="position: absolute; bottom: 8px; right: 8px; background: rgba(11, 39, 9, 0.6); border: none; cursor: pointer; padding: 6px; border-radius: 4px; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(2px);" title="Ampliar imagen"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button><dialog style="border: none; border-radius: 12px; padding: 0; margin: 0; background: transparent; width: 90vw; max-width: 1100px; height: 80vh; max-height: 700px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); overflow: visible; box-shadow: none;" class="modal-zoom"><div style="position: relative; width: 100%; height: 100%;"><img src="images/servomotor.jpeg" style="width: 100%; height: 100%; object-fit: contain; display: block; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.7); background-color: #1a1a1a;"><button onclick="this.closest('dialog').close()" style="position: absolute; top: -12px; right: -12px; background: #ff4d4d; color: white; border: none; border-radius: 50%; width: 32px; height: 32px; font-weight: bold; font-size: 14px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; z-index: 10;">X</button></div></dialog></div>
+                    <p>Características: Se realiza este trabajo con el fin de entender la lógica de cómo interpretar la lógica del for utilizando un servomotor,</p>
+                    <a href="https://wokwi.com/projects/471014339718215681" target="_blank" class="boton-accion">Ver Código y Circuito</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>2026 — Proyecto de Laboratorio de Hardware · 5to Año</p>
+        <p>Desarrollado con HTML · CSS · JS</p>
+    </footer>
+
+    <!-- MODALES -->
+    <dialog id="modal-ficha">
+        <h3>Ficha Técnica PC LAB.</h3>
+        <iframe src="Documentos/Ficha Técnica Pedro Del Boca Casis.pdf" style="width:100%; height:550px;" frameborder="0"></iframe>
+        <button id="btn-cerrar-ficha" class="boton-accion">Cerrar</button>
+    </dialog>
+
+    <dialog id="modal-layout">
+        <h3>Layout de Placa Madre ASUS</h3>
+        <img src="images/placa_madre_layout.jpg" alt="Esquema del manual de Placa Madre" style="width:100%; height:550px;">
+        <button id="btn-cerrar-layout" class="boton-accion">Cerrar</button>
+    </dialog>
+
+    <dialog id="modal-investigacion">
+        <h3>Investigación Arquitectónica — Placa Madre</h3>
+        <iframe src="Documentos/Investigación Arquitectónica Placa Base.pdf#zoom=80" style="width:100%; height:550px;" frameborder="0"></iframe>
+        <button id="btn-cerrar-expli" class="boton-accion">Cerrar PDF</button>
+    </dialog>
+
+    <dialog id="modal-investigacion2">
+        <h3>Investigación Arquitectónica — Procesador</h3>
+        <iframe src="Documentos/Investigación Arquitectónica Procesador.pdf#zoom=80" style="width:100%; height:550px;" frameborder="0"></iframe>
+        <button id="btn-cerrar-expli2" class="boton-accion">Cerrar PDF</button>
+    </dialog>
+
+    <dialog id="modal-investigacion3">
+        <h3>Investigación Arquitectónica — Memoria RAM y Almacenamiento</h3>
+        <iframe src="Documentos/Investigación Arquitectónica Memoria RAM y Subsistemas de Almacenamiento.pdf#zoom=80" style="width:100%; height:550px;" frameborder="0"></iframe>
+        <button id="btn-cerrar-expli3" class="boton-accion">Cerrar PDF</button>
+    </dialog>
+
+    <dialog id="modal-investigacion4">
+        <h3>Investigación Arquitectónica — Tarjeta Gráfica (GPU)</h3>
+        <iframe src="Documentos/Investigación Arquitectónica Tarjeta Gráfica (GPU) y Procesamiento Visual.pdf#zoom=80" style="width:100%; height:550px;" frameborder="0"></iframe>
+        <button id="btn-cerrar-expli4" class="boton-accion">Cerrar PDF</button>
+    </dialog>
+
+    <dialog id="modal-investigacion5">
+        <h3>Investigación Arquitectónica — Energía (PSU) y Dinámica de Fluidos (Gabinete)</h3>
+        <iframe src="Documentos/Investigación Arquitectónica Energía (PSU) y Dinámica de Fluidos (Gabinete).pdf#zoom=80" style="width:100%; height:550px;" frameborder="0"></iframe>
+        <button id="btn-cerrar-expli5" class="boton-accion">Cerrar PDF</button>
+    </dialog>
+
+    <dialog id="modal-investigacion6">
+        <h3>Investigación Arquitectónica — Periféricos y Dispositivos de E/S (Entrada y Salida)</h3>
+        <iframe src="Documentos/Investigación Arquitectónica Periféricos y Dispositivos de ES (EntradaSalida).pdf#zoom=80" style="width:100%; height:550px;" frameborder="0"></iframe>
+        <button id="btn-cerrar-expli6" class="boton-accion">Cerrar PDF</button>
+    </dialog>
+
+    <dialog id="modal-presupuesto_c1">
+        <h3>Presupuesto — Computadora de Escritorio</h3>
+        <iframe src="Documentos/Cliente 1_Presupuesto Técnico y Armado a Medida.pdf#zoom=80" style="width:100%; height:550px;" frameborder="0"></iframe>
+        <button id="btn-cerrar-presupuesto_c1" class="boton-accion">Cerrar PDF</button>
+    </dialog>
+    
+    <dialog id="modal-presupuesto_c2">
+        <h3>Presupuesto — Computadora de Oficina</h3>
+        <iframe src="Documentos/Cliente 2_Presupuesto Técnico y Armado a Medida.pdf#zoom=80" style="width:100%; height:550px;" frameborder="0"></iframe>
+        <button id="btn-cerrar-presupuesto_c2" class="boton-accion">Cerrar PDF</button>
+    </dialog>
+
+    <dialog id="modal-mantenimiento_soldadura">
+        <h3>Mantenimiento — Soldadura</h3>
+        <iframe src="Documentos/Taller de Soldadura - Protocolo de Seguridad e Insumos.pdf#zoom=80" style="width:100%; height:550px;" frameborder="0"></iframe>
+        <button id="btn-cerrar-soldadura" class="boton-accion">Cerrar PDF</button>
+    </dialog>
+
+    <script src="Scripts/mains.js"></script>
+</body>
+
+</html>
