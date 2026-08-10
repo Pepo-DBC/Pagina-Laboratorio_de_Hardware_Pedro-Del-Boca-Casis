@@ -286,6 +286,9 @@ h2 em { font-style: italic; color: var(--accent-serif); }
     border: 1px solid var(--border);
     margin-top: 40px;
 }
+#arduino .galeria-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
 
 /* --- TARJETAS --- */
 .tarjeta {
