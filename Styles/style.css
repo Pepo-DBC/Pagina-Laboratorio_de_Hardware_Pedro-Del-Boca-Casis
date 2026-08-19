@@ -524,10 +524,25 @@ body.modo-oscuro .interruptor-tema { color: var(--gold); border-color: var(--gol
 
     footer { flex-direction: column; padding: 30px 24px; align-items: flex-start; }
     .interruptor-tema { top: 8px; right: 16px; }
+
+    /* La galería de Arduino queda forzada a 3 columnas fijas por la regla
+       "#arduino .galeria-grid" (línea ~289), que al llevar un ID tiene más
+       especificidad que ".galeria-grid" y por eso no respetaba el
+       comportamiento responsive del resto de las secciones. Se la
+       sobreescribe acá con la misma especificidad (ID + clase) para que
+       en tablet pase a 2 columnas. */
+    #arduino .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
     .galeria-grid { grid-template-columns: 1fr; }
     dialog { padding: 20px 16px; }
     .hero-titulo h1 { font-size: 2.5rem; }
+
+    /* Y en celular, 1 sola columna como el resto de las galerías. */
+    #arduino .galeria-grid {
+        grid-template-columns: 1fr;
+    }
 }
